@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using System.Web.Http;
 using TipCallback.Models;
 
 namespace TipCallback.Controllers
@@ -13,20 +8,12 @@ namespace TipCallback.Controllers
         [HttpPost]
         public ChangeDirectionResult GetRoutingDirection([FromBody] RerouteChangeRequest metrics)
         {
+            // Use either Step or RoutingPercentage. If both returned RoutingPercentage takes precedence
             return new ChangeDirectionResult
             {
-                Step = metrics.Metrics.Count * 8,
+                Step = (int)metrics.Metrics["self"].Requests,
                 RoutingPercentage = 10
             };
-        }
-
-        [HttpGet]
-        public ChangeDirectionResult Get()
-        {
-            return new ChangeDirectionResult
-            {
-                RoutingPercentage = 10
-            };
-        }
+        } 
     }
 }
