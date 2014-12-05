@@ -1,0 +1,1 @@
+call %~dp0..\.nuget\nuget.exe pack TipCallback.nuspec

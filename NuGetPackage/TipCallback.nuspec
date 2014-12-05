@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>TiPCallback</id>
+    <title>TiP Callback Extension</title>
+    <version>1.0.5</version>
+    <authors>Galin Iliev</authors>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/galcho/TiPCallback</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Sample custom callback for Testing In Prodcution (TiP) ramp up</description>
+    <iconUrl>http://secure.gravatar.com/avatar/805765c256ff8617fcad483b5476faf2</iconUrl>
+    <tags>tipcallback siteextension tip</tags>
+  </metadata>
+  <files>
+    <file src="..\applicationHost.xdt" target="content" />
+    <file src="..\index.html" target="content" />
+    <file src="..\Global.asax" target="content" />
+    <file src="..\Web.config" target="content" />
+    <file src="TipCallback.nuspec" target="content" />
+    <file src="..\App_Code\Entities.cs" target="content/App_Code" />
+    <file src="..\App_Code\RoutingController.cs" target="content/App_Code" />
+    <file src="..\bin\Newtonsoft.Json.dll" target="content/bin" />
+    <file src="..\bin\System.Net.Http.Formatting.dll" target="content/bin" />
+    <file src="..\bin\System.Web.Http.dll" target="content/bin" />
+    <file src="..\bin\System.Web.Http.Tracing.dll" target="content/bin" />
+    <file src="..\bin\System.Web.Http.WebHost.dll" target="content/bin" />
+    
+    <!--REST Test-->
+    <file src="..\RestTest\bootstrap\css\bootstrap-responsive.css" target="content/RestTest/bootstrap/css" />
+    <file src="..\RestTest\bootstrap\css\bootstrap-responsive.min.css" target="content/RestTest/bootstrap/css" />
+    <file src="..\RestTest\bootstrap\css\bootstrap.css" target="content/RestTest/bootstrap/css" />
+    <file src="..\RestTest\bootstrap\css\bootstrap.min.css" target="content/RestTest/bootstrap/css" />
+
+    <file src="..\RestTest\bootstrap\img\glyphicons-halflings-white.png" target="content/RestTest/bootstrap/img" />
+    <file src="..\RestTest\bootstrap\img\glyphicons-halflings.png" target="content/RestTest/bootstrap/img" />
+    
+    <file src="..\RestTest\bootstrap\js\bootstrap.js" target="content/RestTest/bootstrap/js" />
+    <file src="..\RestTest\bootstrap\js\bootstrap.min.js" target="content/RestTest/bootstrap/js" />
+
+    <file src="..\RestTest\debug.css" target="content/RestTest" />
+    <file src="..\RestTest\debug.js" target="content/RestTest" />
+    <file src="..\RestTest\jquery-1.10.2.min.js" target="content/RestTest" />
+    <file src="..\RestTest\spinner.gif" target="content/RestTest" />
+
+  </files>
+</package>
