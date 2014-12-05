@@ -85,7 +85,7 @@ $("#submitajax").click(function(e) {
 });
   
 function getPostBody() {
-    return $("#postBody").text();
+    return $("#postBody").val();
 }
 
 function httpZeroError() {
