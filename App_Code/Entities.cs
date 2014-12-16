@@ -60,5 +60,74 @@ namespace TipCallback.Models
     {
         [DataMember]
         public long Requests { get; set; }
+        
+        [DataMember]
+        public long IncomingRequestResponseBytes { get; set; }
+        
+        [DataMember]
+        public long IncomingRequestBytes { get; set; }
+        
+        [DataMember]
+        public long OutgoingRequestResponseBytes { get; set; }
+        
+        [DataMember]
+        public long OutgoingRequestBytes { get; set; }
+        
+        [DataMember]
+        public long LocalReadBytes { get; set; }
+        
+        [DataMember]
+        public long LocalWrittenBytes { get; set; }
+        
+        [DataMember]
+        public long NetworkReadBytes { get; set; }
+        
+        [DataMember]
+        public long NetworkWrittenBytes { get; set; }
+        
+        [DataMember]
+        public int StopRequests { get; set; }
+        
+        [DataMember]
+        public TimeSpan ProcessorTime { get; set; }
+ 
+        [DataMember]
+        public int Http2xx { get; set; }
+
+        [DataMember]
+        public int Http3xx { get; set; }
+        
+        [DataMember]
+        public int Http401 { get; set; }
+        
+        [DataMember]
+        public int Http403 { get; set; }
+        
+        [DataMember]
+        public int Http404 { get; set; }
+        
+        [DataMember]
+        public int Http406 { get; set; }
+        
+        [DataMember]
+        public int Http4xx { get; set; }
+        
+        [DataMember]
+        public int Http5xx { get; set; }
+        
+        [DataMember]
+        public long CurrentMemoryWorkingSet { get; set; }
+        
+        [DataMember]
+        public long MaxMemoryWorkingSet { get; set; }
+        
+        [DataMember]
+        public long MinMemoryWorkingSet { get; set; }
+        
+        [DataMember]
+        public double AverageMemoryWorkingSet { get; set; }
+        
+        [DataMember]
+        public double AverageTimeTaken { get; set; }
     }
 }
